@@ -52,19 +52,19 @@ const SITE = {
   capabilities: [
     {
       title: "Sound Design",
-      body: "Foley, impact, ambience and mechanical design built from recorded and synthesised sources. Shaped for the way a player reads distance, weight and danger.",
+      body: "Impacts, ambience, mechanical and environmental sound — designed so a player reads distance, weight and danger without being told.",
     },
     {
       title: "Game Audio Implementation",
-      body: "Sound integrated into the systems that trigger it: audio pools, categorisation, mix groups and event-driven playback inside Unity and Unreal.",
+      body: "Sound wired into the systems that trigger it: audio pools, categorisation and event-driven playback, inside the same Unity and Unreal projects I help build.",
     },
     {
-      title: "Voice Direction & Casting",
-      body: "Writing and directing performer lines, recording, comping and processing character voice from clean takes into in-world character.",
+      title: "Voice & Character",
+      body: "Performing and producing character voice — from the take through editing and processing into something that belongs in the world it is spoken in.",
     },
     {
       title: "Music & Atmosphere",
-      body: "Original cues and drones composed to sit under gameplay rather than over it, with the interactive state the player is in.",
+      body: "Original music and atmosphere written to sit under gameplay rather than over it, and to follow the state the player is in.",
     },
   ],
 
@@ -146,7 +146,7 @@ const SITE = {
               {
                 title: "Announcer — English, ghostly mix",
                 file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english-ghostly.mp3",
-                desc: "The same performance pitched and smeared into something no longer human.",
+                desc: "The same performance, pushed into something no longer human.",
                 tags: ["Voice", "Processed"],
               },
               {
@@ -175,7 +175,7 @@ const SITE = {
           {
             key: "village",
             title: "Village Cast",
-            note: "Four characters living in the ruins around the temple. All lines written, performed and recorded for the game.",
+            note: "Four characters living in the ruins around the temple. Every line here was performed and recorded for the game.",
             tracks: [
               { title: "Friend — line 01", file: "assets/audio/horizon-of-aten/vo/village/friend-01.mp3", tags: ["Friend"] },
               { title: "Friend — line 02", file: "assets/audio/horizon-of-aten/vo/village/friend-02.mp3", tags: ["Friend"] },
@@ -253,7 +253,7 @@ const SITE = {
           {
             key: "sfx",
             title: "Interior Sound Effects",
-            note: "Sound effects recorded and produced for the temple interior. EACH TITLE BELOW IS A WORKING PLACEHOLDER — tell me the real in-game name for each clip and I will rename them here.",
+            note: "Sound effects recorded and produced for the temple interior — the mechanical, environmental and interaction sounds the puzzles are built on.",
             tracks: [
               { title: "Interior SFX 01", file: "assets/audio/horizon-of-aten/sfx/interior-sfx-01.mp3" },
               { title: "Interior SFX 02", file: "assets/audio/horizon-of-aten/sfx/interior-sfx-02.mp3" },
@@ -626,13 +626,6 @@ const SITE = {
     ],
     experience: [
       {
-        when: "October 2025 – Present",
-        role: "Scholarship in Game Development",
-        org: "Information Technology Institute (ITI)",
-        body: "A nine-month intensive Game Programming track focused on gameplay systems and engine architecture. Developed multiple game prototypes in Unity and Unreal Engine, including the VR title Horizons of Aten.",
-        tags: ["Unity", "Unreal Engine", "C#", "C++", "VR", "Game AI"],
-      },
-      {
         when: "August 2024 – September 2024",
         role: "Virtual Reality Developer Intern",
         org: "National Academy of Information Technology for Persons with Disabilities (NAID)",
@@ -670,8 +663,8 @@ const SITE = {
           "REAPER",
           "AmpliTube",
           "Sound design",
-          "Foley & field recording",
-          "Voice direction",
+          "Sound effects",
+          "Voice acting",
           "Audio implementation",
           "Audio pooling & categorisation",
           "Music composition",
@@ -707,7 +700,7 @@ const SITE = {
       },
     ],
     cv: {
-      // Drop your CV PDF here with this exact filename and the download button will work.
+      // To replace the CV, overwrite this file with the new PDF (keep the same filename).
       file: "assets/cv/Seif-Eldin-Mohamed-CV.pdf",
       label: "Download CV (PDF)",
     },
