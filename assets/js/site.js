@@ -515,9 +515,9 @@
     var mediaPieces = [];
 
     if (project.video) {
-      var embedUrl = vimeoEmbed(project.video);
+      var embedUrl = isExternal(project.video) ? vimeoEmbed(project.video) : null;
+      var box = el("div", "embed");
       if (embedUrl) {
-        var box = el("div", "embed");
         var iframe = document.createElement("iframe");
         iframe.src = embedUrl;
         iframe.title = project.title + " — gameplay";
@@ -525,6 +525,16 @@
         iframe.allow = "fullscreen; picture-in-picture";
         iframe.setAttribute("allowfullscreen", "");
         box.appendChild(iframe);
+        mediaPieces.push(box);
+      } else {
+        var video = document.createElement("video");
+        video.src = project.video;
+        video.controls = true;
+        video.preload = "metadata";
+        video.playsInline = true;
+        video.setAttribute("controlsList", "nodownload");
+        if (project.videoPoster) video.poster = project.videoPoster;
+        box.appendChild(video);
         mediaPieces.push(box);
       }
     }
