@@ -52,7 +52,7 @@ const SITE = {
     intro:
       "I create immersive audio experiences for interactive worlds. Combining sound design with a background in game development, I bring sound, atmosphere and interaction together.",
     heroStatement:
-      "Every sound in my most recent project was made by me — the ambience, the effects and the voice work.",
+      "In my most recent project I created most of the sound myself — and every sound in it was processed and edited by me to fit its world.",
   },
 
   /* Capabilities — kept deliberately short and non-technical in tone. */
@@ -89,55 +89,53 @@ const SITE = {
       category: "VR Adventure",
       year: "2026",
       role: "Sound Designer & Game Audio Designer",
-      credit: "All audio in the game is mine",
+      credit: "Most sounds created by me; every sound processed & edited",
       tools: [
         "FL Studio",
-        "REAPER",
-        "AmpliTube",
         "Focusrite Scarlett Solo",
-        "Electric guitar",
         "Instrumental microphone",
         "Unreal Engine",
       ],
       shortDescription:
-        "A first-person PC VR puzzle and exploration game that takes the player through an abandoned ancient Egyptian city towards the heart of a mythical temple. I created every sound heard in the game.",
+        "A first-person PC VR puzzle and exploration game that takes the player through an abandoned ancient Egyptian city towards the heart of a mythical temple. I created most of the sound heard in the game, and processed and edited every sound in it to fit the game's world.",
       overview: [
         "Horizon of Aten is a first-person PC VR puzzle and exploration experience set inside a forgotten ancient Egyptian city. The player moves from the ruins and the surrounding village into the interior of a temple, solving environmental puzzles, avoiding traps and uncovering what has been hidden there.",
-        "I was responsible for the complete audio of the project: the sound effects, the audio pool and its categorisation, the voice cast, and the music. That meant designing for a medium where the player is physically inside the space — where a sound's direction and distance are not decoration but the main way the world communicates.",
+        "I was responsible for the audio of the project: most of the sound effects, the audio pool and its categorisation, the voice cast, and the music. Every sound in the game — whether I created it or sourced it — was processed and edited by me to fit the game's world. That meant designing for a medium where the player is physically inside the space — where a sound's direction and distance are not decoration but the main way the world communicates.",
         "Built alongside a mixed art and development team in collaboration with CUBE Consultants, the project was a deliberate exercise in joining game design, environment art, VR interaction, puzzle design and storytelling into a single immersive experience.",
       ],
       contributions: [
-        "<strong>Complete sound design</strong> — every sound effect in the game, from the footstep sets and impacts to the mechanical and magical interactions that drive the puzzles.",
+        "<strong>Sound design</strong> — most of the sound effects in the game, from the footstep sets and impacts to the mechanical and magical interactions that drive the puzzles.",
         "<strong>Audio pool & categorisation</strong> — the structure that organises, names and routes sounds so they can be triggered reliably from game events.",
-        "<strong>Voice acting</strong> — performing and recording the character lines across the temple announcer, the village cast, the workers and the player character.",
+        "<strong>Voice acting</strong> — performing and recording the character lines across the temple announcer, the village cast, the workers and the player character. The female lines are my own performance, passed through an AI voice model to preserve the captured acting.",
         "<strong>Voice processing</strong> — treating the raw takes into in-world character, including a ghostly treatment explored for the surreal moments in the temple.",
         "<strong>Music</strong> — original cues and atmosphere written for the temple and village sections of the game.",
         "<strong>Interactive integration</strong> — triggering audio from the gameplay systems so it responds to what the player actually does.",
       ],
       audioNote:
-        "Every clip below is audio recorded and produced for the game. Where a single performance exists in more than one treatment, the A/B player lets you hear the versions side by side.",
+        "Every clip below is audio recorded, produced or processed for the game. Where a single performance exists in more than one treatment, the A/B player lets you hear the versions side by side.",
       audio: {
         groups: [
           {
             key: "announcer",
             title: "Temple Announcer",
-            note: "The voice that speaks to the player through the temple, recorded in Egyptian Arabic and in English.",
+            note: "The voice that speaks to the player through the temple — recorded in the Ancient Egyptian tongue and in English.",
             tracks: [
               {
-                title: "Announcer — Egyptian Arabic",
+                title: "Announcer — Ancient Egyptian",
                 file: "assets/audio/horizon-of-aten/vo/announcer/announcer-egyptian.mp3",
-                desc: "The recorded performance.",
-                tags: ["Voice", "Egyptian Arabic"],
+                desc: "The announcement delivered in the Ancient Egyptian tongue.",
+                tags: ["Voice", "Ancient Egyptian"],
               },
               {
                 title: "Announcer — English",
                 file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english.mp3",
-                desc: "The same announcement delivered in English.",
+                desc: "The same announcement delivered in English, in three treatments.",
                 tags: ["Voice", "English"],
                 ab: {
                   label: "Treatment",
                   variants: [
-                    { name: "Dry", file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english.mp3" },
+                    { name: "Dry", file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english-dry.mp3" },
+                    { name: "Reverb", file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english.mp3" },
                     { name: "Ghostly", file: "assets/audio/horizon-of-aten/vo/announcer/announcer-english-ghostly.mp3" },
                   ],
                 },
@@ -168,7 +166,7 @@ const SITE = {
           {
             key: "village",
             title: "Village Cast",
-            note: "The characters living in the ruins around the temple. Every line here was performed and recorded for the game.",
+            note: "The characters living in the ruins around the temple. Lines were voiced for the game. The female performances are my own voice acting, passed through an AI voice model to preserve the captured acting — where an original take survives, the switch lets you hear my voice and the AI voice side by side.",
             tracks: [
               { title: "Friend — line 01", file: "assets/audio/horizon-of-aten/vo/village/friend-01.mp3", tags: ["Friend"] },
               { title: "Friend — line 02", file: "assets/audio/horizon-of-aten/vo/village/friend-02.mp3", tags: ["Friend"] },
@@ -184,11 +182,43 @@ const SITE = {
               { title: "Homeless — line 04", file: "assets/audio/horizon-of-aten/vo/village/homeless-04.mp3", tags: ["Homeless"] },
               { title: "Homeless — line 05", file: "assets/audio/horizon-of-aten/vo/village/homeless-05.mp3", tags: ["Homeless"] },
               { title: "Homeless — line 06", file: "assets/audio/horizon-of-aten/vo/village/homeless-06.mp3", tags: ["Homeless"] },
-              { title: "Mother — line 01", file: "assets/audio/horizon-of-aten/vo/village/mother-01.mp3", tags: ["Mother"] },
-              { title: "Mother — line 02", file: "assets/audio/horizon-of-aten/vo/village/mother-02.mp3", tags: ["Mother"] },
-              { title: "Mother — line 03", file: "assets/audio/horizon-of-aten/vo/village/mother-03.mp3", tags: ["Mother"] },
+              {
+                title: "Mother — line 01",
+                file: "assets/audio/horizon-of-aten/vo/village/mother-01.mp3",
+                tags: ["Mother"],
+                ab: {
+                  label: "Take",
+                  variants: [
+                    { name: "My voice", file: "assets/audio/horizon-of-aten/vo/village/mother-01-original.mp3" },
+                    { name: "AI voice", file: "assets/audio/horizon-of-aten/vo/village/mother-01.mp3" },
+                  ],
+                },
+              },
+              {
+                title: "Mother — line 02",
+                file: "assets/audio/horizon-of-aten/vo/village/mother-02.mp3",
+                tags: ["Mother"],
+                ab: {
+                  label: "Take",
+                  variants: [
+                    { name: "My voice", file: "assets/audio/horizon-of-aten/vo/village/mother-02-original.mp3" },
+                    { name: "AI voice", file: "assets/audio/horizon-of-aten/vo/village/mother-02.mp3" },
+                  ],
+                },
+              },
+              {
+                title: "Mother — line 03",
+                file: "assets/audio/horizon-of-aten/vo/village/mother-03.mp3",
+                tags: ["Mother"],
+                ab: {
+                  label: "Take",
+                  variants: [
+                    { name: "My voice", file: "assets/audio/horizon-of-aten/vo/village/mother-03-original.mp3" },
+                    { name: "AI voice", file: "assets/audio/horizon-of-aten/vo/village/mother-03.mp3" },
+                  ],
+                },
+              },
               { title: "Woman — line 01", file: "assets/audio/horizon-of-aten/vo/village/woman-01.mp3", tags: ["Woman"] },
-              { title: "Lenny", file: "assets/audio/horizon-of-aten/vo/village/lenny.mp3", tags: ["Lenny"] },
             ],
           },
           {
@@ -248,17 +278,8 @@ const SITE = {
           {
             key: "sfx-footsteps",
             title: "Footsteps",
-            note: "Three surfaces, three variations each, plus looped versions for continuous walking. Recorded, edited and prepared for the game.",
+            note: "Three surfaces as seamless loops for continuous walking — sand, stone and wood. Recorded, edited and prepared for the game.",
             tracks: [
-              { title: "Footstep — Sand 1", file: "assets/audio/horizon-of-aten/sfx/footstep-sand-1.mp3", tags: ["Sand"] },
-              { title: "Footstep — Sand 2", file: "assets/audio/horizon-of-aten/sfx/footstep-sand-2.mp3", tags: ["Sand"] },
-              { title: "Footstep — Sand 3", file: "assets/audio/horizon-of-aten/sfx/footstep-sand-3.mp3", tags: ["Sand"] },
-              { title: "Footstep — Stone 1", file: "assets/audio/horizon-of-aten/sfx/footstep-stone-1.mp3", tags: ["Stone"] },
-              { title: "Footstep — Stone 2", file: "assets/audio/horizon-of-aten/sfx/footstep-stone-2.mp3", tags: ["Stone"] },
-              { title: "Footstep — Stone 3", file: "assets/audio/horizon-of-aten/sfx/footstep-stone-3.mp3", tags: ["Stone"] },
-              { title: "Footstep — Wood 1", file: "assets/audio/horizon-of-aten/sfx/footstep-wood-1.mp3", tags: ["Wood"] },
-              { title: "Footstep — Wood 2", file: "assets/audio/horizon-of-aten/sfx/footstep-wood-2.mp3", tags: ["Wood"] },
-              { title: "Footstep — Wood 3", file: "assets/audio/horizon-of-aten/sfx/footstep-wood-3.mp3", tags: ["Wood"] },
               { title: "Footsteps — Sand, loop", file: "assets/audio/horizon-of-aten/sfx/footsteps-sand-loop.mp3", tags: ["Loop"] },
               { title: "Footsteps — Stone, loop", file: "assets/audio/horizon-of-aten/sfx/footsteps-stone-loop.mp3", tags: ["Loop"] },
               { title: "Footsteps — Wood, loop", file: "assets/audio/horizon-of-aten/sfx/footsteps-wood-loop.mp3", tags: ["Loop"] },
@@ -278,7 +299,6 @@ const SITE = {
               { title: "Push stone statue", file: "assets/audio/horizon-of-aten/sfx/push-stone-statue.mp3", tags: ["Mechanism"] },
               { title: "Rumbling", file: "assets/audio/horizon-of-aten/sfx/rumbling.mp3", tags: ["Environment"] },
               { title: "Crowd", file: "assets/audio/horizon-of-aten/sfx/crowd.mp3", tags: ["Environment"] },
-              { title: "Fahh", file: "assets/audio/horizon-of-aten/sfx/fahh.mp3", tags: ["Voice"] },
             ],
           },
         ],
@@ -290,7 +310,7 @@ const SITE = {
       gallery: [],
       links: [],
       credits: [
-        { role: "Sound design, voice & music — all audio", names: ["Seif Eldin Mohamed"] },
+        { role: "Sound design, voice, music & audio processing — most sounds created, all processed", names: ["Seif Eldin Mohamed"] },
         { role: "Development team", names: ["Mohab Atef", "Seif Eldin Mohamed", "Zeyad Habash", "Rober Nagy"] },
         { role: "Art team", names: ["Youssef Salah", "Efad ElBorollosy", "Abdelrahman Reda", "Alyaa Abdelhamed"] },
       ],
@@ -315,29 +335,30 @@ const SITE = {
       category: "Narrative",
       year: "2026",
       role: "Game Developer & Sound Designer",
-      credit: "All audio is mine",
-      tools: ["Unity", "C#"],
+      credit: "Max voiced by me; all SFX & music mine; K's voice processed",
+      tools: ["Unity", "C#", "FL Studio"],
       shortDescription:
         "A story-rich 3D walking simulator built in Unity for Egypt Game Jam 2026, exploring identity, media perception and lived experience in conflict.",
       overview: [
         "From the River to the Sea is a 3D narrative walking simulator built over the course of a game jam. It moves the player from the position of distant observer into participant, walking through a ruined city guided by a child character, K, who shares memories of loss and home.",
-        "I co-developed the project and created its audio — the dialogue for both speaking characters, the interaction sounds and the main menu music.",
+        "I co-developed the project and created its audio. I voiced Max, the reporter; created all the sound effects; composed all the music in FL Studio; and processed K's lines with reverb and ghostly effects. K was voiced by another actor — I did not perform that part.",
       ],
       contributions: [
         "<strong>Narrative progression</strong> — building the transition from observer to participant as the core structural mechanic.",
         "<strong>Environmental storytelling</strong> — guiding the player's reading of the space through pacing and placement.",
-        "<strong>Voice</strong> — recording and editing the dialogue for K and for Max.",
-        "<strong>Sound effects</strong> — interface feedback and interaction sounds, including the plate-breaking effect used in the opening.",
-        "<strong>Music</strong> — the main menu cue.",
+        "<strong>Voice</strong> — performing and recording Max, the reporter.",
+        "<strong>Voice processing</strong> — treating K's lines with reverb and ghostly effects to place them in the story. K was voiced by another actor.",
+        "<strong>Sound effects</strong> — all of the project's sound effects, including interface feedback, interaction sounds and the plate-breaking effect used in the opening.",
+        "<strong>Music</strong> — all the music clips, composed in FL Studio.",
       ],
       audioNote:
-        "The dialogue, interaction sounds and menu music created for the project.",
+        "The dialogue, sound effects and music created for the project.",
       audio: {
         groups: [
           {
             key: "k",
             title: "K — dialogue",
-            note: "The child who guides the player through the city.",
+            note: "The child who guides the player through the city. K was voiced by another actor; the lines were processed by me with reverb and ghostly effects.",
             tracks: [
               { title: "K — line 01", file: "assets/audio/from-the-river-to-the-sea/vo/k/line-01.mp3", tags: ["K"] },
               { title: "K — line 02", file: "assets/audio/from-the-river-to-the-sea/vo/k/line-02.mp3", tags: ["K"] },
@@ -354,7 +375,7 @@ const SITE = {
           {
             key: "max",
             title: "Max — dialogue",
-            note: "The second speaking character in the story.",
+            note: "Max, the reporter — voiced and recorded by me.",
             tracks: [
               { title: "Max — line 01", file: "assets/audio/from-the-river-to-the-sea/vo/max/max-01.mp3", tags: ["Max"] },
               { title: "Max — line 02", file: "assets/audio/from-the-river-to-the-sea/vo/max/max-02.mp3", tags: ["Max"] },
@@ -370,7 +391,7 @@ const SITE = {
           {
             key: "sfx",
             title: "Interface & interaction",
-            note: "Menu feedback and interaction sounds built for the game.",
+            note: "Menu feedback and interaction sounds, all built for the game.",
             tracks: [
               { title: "UI — click", file: "assets/audio/from-the-river-to-the-sea/sfx/ui-click.mp3", tags: ["UI"] },
               { title: "UI — hover", file: "assets/audio/from-the-river-to-the-sea/sfx/ui-hover.mp3", tags: ["UI"] },
@@ -381,7 +402,7 @@ const SITE = {
           {
             key: "music",
             title: "Music",
-            note: "The main menu cue written for the project.",
+            note: "The music clips written for the project in FL Studio.",
             tracks: [
               { title: "Main menu", file: "assets/audio/from-the-river-to-the-sea/music/main-menu.mp3", tags: ["Music"] },
             ],
@@ -419,12 +440,12 @@ const SITE = {
       year: "2025",
       role: "Game Developer & Sound Designer",
       credit: "All audio is mine",
-      tools: ["C++", "SFML"],
+      tools: ["C++", "SFML", "FL Studio", "Electric guitar", "AmpliTube", "Focusrite Scarlett Solo"],
       shortDescription:
         "A fast-paced, physics-driven 2D platformer in which the player, Gayar, crosses a city while avoiding the 'Attaba' effect and its hazards. First place at the ITI Mini-Game Jam.",
       overview: [
         "Attaba Syndrome was built for the ITI Mini-Game Jam without an engine — straight C++ on top of SFML. The player character, Gayar, has to cross a city while managing the disorienting 'Attaba' effect and its hazards.",
-        "I built the gameplay systems and created the audio. The game won first place.",
+        "I built the gameplay systems and created all of the audio — every character line, every sound effect and all of the music. The game won first place.",
       ],
       contributions: [
         "<strong>Parallax scrolling</strong> — multi-layer background motion tied to player velocity.",
@@ -432,20 +453,19 @@ const SITE = {
         "<strong>Bus events with spatialised audio</strong> — timed events with direction-aware sound placement.",
         "<strong>Random 'psycho' disruptions</strong> — unpredictable state changes that raise the pressure.",
         "<strong>Responsive controls</strong> — tuning movement feel for a precision platformer.",
-        "<strong>Dialogue</strong> — recording and editing the character lines.",
-        "<strong>Sound effects & ambience</strong> — hazards, traffic, the park ambience and the interaction sounds.",
-        "<strong>Music</strong> — the cues that follow the player's state through the run.",
+        "<strong>Dialogue</strong> — voicing and recording all the character lines myself, including the grocery-collision and bus-pass lines.",
+        "<strong>Sound effects & ambience</strong> — all of it recorded by me: the hazards, the traffic, the park ambience and the interaction sounds.",
+        "<strong>Music</strong> — the game's music, including the 'Crazy' theme, built with electric guitar through AmpliTube and a Focusrite Scarlett Solo.",
       ],
       audioNote:
-        "The dialogue, effects, ambience and music created for the game.",
+        "The dialogue, effects, ambience and music created for the game — every character voiced and all of it recorded by me.",
       audio: {
         groups: [
           {
             key: "vo",
             title: "Dialogue",
-            note: "The character lines, performed in Egyptian Arabic.",
+            note: "The character lines, all performed in Egyptian Arabic by me.",
             tracks: [
-              { title: "Dialogue — main", file: "assets/audio/attaba-syndrome/vo/dialogue.mp3", tags: ["Dialogue"] },
               { title: "El btngan", file: "assets/audio/attaba-syndrome/vo/el-btngan.mp3", tags: ["Dialogue"] },
               { title: "Enzl ya mtdala3", file: "assets/audio/attaba-syndrome/vo/enzl-ya-mtdala3.mp3", tags: ["Dialogue"] },
               { title: "Grocery — line 01", file: "assets/audio/attaba-syndrome/vo/grocery-line-01.mp3", tags: ["Dialogue"] },
@@ -453,6 +473,8 @@ const SITE = {
               { title: "Kelab la", file: "assets/audio/attaba-syndrome/vo/kelab-la.mp3", tags: ["Dialogue"] },
               { title: "Player reply", file: "assets/audio/attaba-syndrome/vo/player-reply.mp3", tags: ["Dialogue"] },
               { title: "Refuse", file: "assets/audio/attaba-syndrome/vo/refuse.mp3", tags: ["Dialogue"] },
+              { title: "Grocery collision", file: "assets/audio/attaba-syndrome/sfx/grocery-collision.mp3", desc: "A voice line performed for the grocery collision.", tags: ["Voice"] },
+              { title: "Bus pass", file: "assets/audio/attaba-syndrome/sfx/bus-pass.mp3", desc: "A voice line performed for the bus-pass event.", tags: ["Voice"] },
             ],
           },
           {
@@ -462,19 +484,15 @@ const SITE = {
             tracks: [
               { title: "Park ambience", file: "assets/audio/attaba-syndrome/sfx/ambient-park.mp3", tags: ["Ambience"] },
               { title: "Traffic", file: "assets/audio/attaba-syndrome/sfx/traffic.mp3", tags: ["Ambience"] },
-              { title: "Bus pass", file: "assets/audio/attaba-syndrome/sfx/bus-pass.mp3", tags: ["Event"] },
               { title: "Dog", file: "assets/audio/attaba-syndrome/sfx/dog.mp3", tags: ["Event"] },
-              { title: "Grocery collision", file: "assets/audio/attaba-syndrome/sfx/grocery-collision.mp3", tags: ["Hazard"] },
               { title: "Effect", file: "assets/audio/attaba-syndrome/sfx/effect.mp3", tags: ["Interface"] },
             ],
           },
           {
             key: "music",
             title: "Music",
-            note: "The cues written for the project, including the neutral and pressured states of the run.",
+            note: "The 'Crazy' theme, written for the project's pressured state with electric guitar through AmpliTube and a Focusrite Scarlett Solo.",
             tracks: [
-              { title: "Theme", file: "assets/audio/attaba-syndrome/music/theme.mp3", tags: ["Music"] },
-              { title: "Neutral", file: "assets/audio/attaba-syndrome/music/neutral.mp3", tags: ["Music"] },
               { title: "Crazy", file: "assets/audio/attaba-syndrome/music/crazy.mp3", tags: ["Music"] },
             ],
           },
@@ -510,20 +528,21 @@ const SITE = {
       category: "FPS",
       year: "2026",
       role: "Game Developer & Sound Designer",
-      credit: "All audio is mine",
+      credit: "Most audio is mine — a few clips are curated memes",
       tools: ["Unity", "C#"],
       shortDescription:
         "A timed FPS survival game set in a ruined ancient temple overrun by zombies and bats, with four weapons, distinct enemy AI behaviours and a boss encounter.",
       overview: [
         "Horrific City is a timed survival FPS built in Unity. The player holds out in a ruined temple infested with zombies and bats, fighting through several weapons to reach a boss.",
-        "I built the gameplay systems and created the audio for the project.",
+        "I built the gameplay systems and created most of the audio for the project.",
       ],
       contributions: [
         "<strong>Four weapons</strong> — implemented as distinct systems rather than a single reskinned gun.",
         "<strong>Enemy AI</strong> — three separate behaviours: patrolling, alert-and-flee, and swarming.",
         "<strong>Boss encounter</strong> — a 300 HP boss fight as the climax of the run.",
         "<strong>Day / night lighting variants</strong> — the same space read two different ways.",
-        "<strong>Audio</strong> — all sound for the project was created by me.",
+        "<strong>Audio</strong> — most of the sound in the project, with a few clips taken from memes for comic relief.",
+        "<strong>Bat audio logic</strong> — in-game randomised pitch on the flying bats so repeated fly-bys never sound identical.",
       ],
       audioNote: "The audio for this project is not part of this selection.",
       audio: {
@@ -560,30 +579,31 @@ const SITE = {
       category: "RPG",
       year: "2026",
       role: "Game Developer & Sound Designer",
-      credit: "All audio is mine, except background music",
+      credit: "Most audio is mine — the Wife & Young Boy lines and background music are not",
       tools: ["Unity", "C#"],
       shortDescription:
         "A cozy medieval RPG following Fergus, a retired warrior turned village delivery man, as he makes his rounds through Elderwick before racing home.",
       overview: [
         "Life Journey is a cozy medieval RPG built in Unity. Fergus, a retired warrior now working as the village delivery man, makes his rounds through the village of Elderwick before racing home to the woman waiting for him.",
-        "I built the game systems and created the audio: the voice cast, the horse-drawn cart and the environment. The only exception is the background music, which uses a temporary track rather than original music, so it is not included here.",
+        "I built the game systems and created the audio: the voice cast for Fergus and Rodrick, the horse-drawn cart and the environment. The Wife and the Young Boy were voiced by different actors, and the background music uses a temporary track rather than original music, so it is not included here.",
       ],
       contributions: [
         "<strong>Open village exploration</strong> — a traversable settlement with a delivery loop through it.",
         "<strong>NPC interaction</strong> — talking to the villagers Fergus delivers to.",
         "<strong>Horse-drawn delivery cart</strong> — a traversal system built around the character's job.",
         "<strong>Narrative design</strong> — the delivery round as a structure for telling the character's story.",
-        "<strong>Voice cast</strong> — performing and recording Fergus, Rodrick, the Wife and the Young Boy.",
+        "<strong>Voice cast</strong> — performing and recording Fergus and Rodrick. The Wife and the Young Boy were voiced by different actors.",
         "<strong>Sound effects</strong> — the horse-drawn cart and the project's interaction sounds.",
+        "<strong>Cart audio behaviour</strong> — volume attenuation driven by the player's speed, with seamless looping so the wagon fades naturally with the horse's pace.",
       ],
       audioNote:
-        "The voice cast and sound effects created for the project. The background music is a temporary track rather than original work, so it is deliberately not included.",
+        "The voice cast and sound effects created for the project — Fergus and Rodrick performed by me. The background music is a temporary track rather than original work, so it is deliberately not included.",
       audio: {
         groups: [
           {
             key: "vo",
             title: "Voice cast",
-            note: "The characters Fergus meets on his round, plus his own lines.",
+            note: "The characters Fergus meets on his round, plus his own lines. Fergus and Rodrick are my recordings; the Wife and the Young Boy were voiced by different actors.",
             tracks: [
               { title: "Fergus — line 01", file: "assets/audio/life-journey/vo/fergus/01.mp3", tags: ["Fergus"] },
               { title: "Fergus — line 02", file: "assets/audio/life-journey/vo/fergus/02.mp3", tags: ["Fergus"] },
@@ -608,7 +628,7 @@ const SITE = {
             title: "Effects",
             note: "The sound of Fergus's delivery round.",
             tracks: [
-              { title: "Horse wagon", file: "assets/audio/life-journey/sfx/horse-wagon.mp3", tags: ["Traversal"] },
+              { title: "Horse wagon", file: "assets/audio/life-journey/sfx/horse-wagon.mp3", desc: "Looped seamlessly, with volume attenuation tied to the player's speed.", tags: ["Traversal"] },
             ],
           },
         ],
@@ -637,7 +657,7 @@ const SITE = {
     paragraphs: [
       "I am a Game Audio Designer and Sound Designer, and a Computer Engineering graduate from the Arab Academy for Science, Technology and Maritime Transport. I currently study Game Programming at the Information Technology Institute (ITI), where I am completing a nine-month scholarship.",
       "My background is unusual for a sound designer: I came to audio through game development. I have built gameplay systems, AI, VR interactions and interactive environments in Unity and Unreal Engine, in C# and C++. That means when I design a sound I already understand the system that will play it — the event, the state, the trigger — and how to get the audio into it properly.",
-      "My most recent work is Horizon of Aten, a first-person VR puzzle and exploration game set in an ancient Egyptian city, for which I created the complete audio: every sound effect, the audio pool and its categorisation, the voice cast, and the music.",
+      "My most recent work is Horizon of Aten, a first-person VR puzzle and exploration game set in an ancient Egyptian city, for which I created most of the sound — the sound effects, the audio pool and its categorisation, the voice cast, and the music — and processed and edited every sound in the game to fit its world.",
     ],
     facts: [
       { k: "Based in", v: "Cairo, Egypt" },
